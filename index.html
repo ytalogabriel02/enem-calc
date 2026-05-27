@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENEMCalc</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>ENEMCalc</h1>
+
+        <nav>
+            <a href="#simulador">Simulador</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-texto">
+
+            <h2>
+                Simule sua média do ENEM
+            </h2>
+
+            <p>
+                Calcule sua média ponderada utilizando
+                diferentes pesos para cada área do conhecimento.
+            </p>
+
+            <a href="#simulador">
+                <button>Começar</button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <main class="container" id="simulador">
+
+        <section class="card">
+
+            <h2>Notas do ENEM</h2>
+
+            <div class="inputs">
+
+                <div class="campo">
+                    <label>Linguagens</label>
+                    <input type="number" id="linguagens">
+                </div>
+
+                <div class="campo">
+                    <label>Humanas</label>
+                    <input type="number" id="humanas">
+                </div>
+
+                <div class="campo">
+                    <label>Natureza</label>
+                    <input type="number" id="natureza">
+                </div>
+
+                <div class="campo">
+                    <label>Matemática</label>
+                    <input type="number" id="matematica">
+                </div>
+
+                <div class="campo">
+                    <label>Redação</label>
+                    <input type="number" id="redacao">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Pesos</h2>
+
+            <div class="inputs">
+
+                <div class="campo">
+                    <label>Peso Linguagens</label>
+                    <input type="number" id="pesoL">
+                </div>
+
+                <div class="campo">
+                    <label>Peso Humanas</label>
+                    <input type="number" id="pesoH">
+                </div>
+
+                <div class="campo">
+                    <label>Peso Natureza</label>
+                    <input type="number" id="pesoN">
+                </div>
+
+                <div class="campo">
+                    <label>Peso Matemática</label>
+                    <input type="number" id="pesoM">
+                </div>
+
+                <div class="campo">
+                    <label>Peso Redação</label>
+                    <input type="number" id="pesoR">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Nota de Corte</h2>
+
+            <div class="campo">
+                <input type="number" id="corte">
+            </div>
+
+            <button id="calcular">
+                Calcular Média
+            </button>
+
+        </section>
+
+        <section class="resultado card">
+
+            <h2>Resultado</h2>
+
+            <h3 id="mediaFinal">
+                Média Final: 0
+            </h3>
+
+            <p id="situacao">
+                Aguardando cálculo...
+            </p>
+
+            <p id="maiorNota">
+                Maior nota: ---
+            </p>
+
+            <p id="menorNota">
+                Menor nota: ---
+            </p>
+
+        </section>
+
+        <section class="grafico card">
+
+            <h2>Desempenho</h2>
+
+            <div class="barra-container">
+                <span>Linguagens</span>
+                <div class="barra" id="barraL"></div>
+            </div>
+
+            <div class="barra-container">
+                <span>Humanas</span>
+                <div class="barra" id="barraH"></div>
+            </div>
+
+            <div class="barra-container">
+                <span>Natureza</span>
+                <div class="barra" id="barraN"></div>
+            </div>
+
+            <div class="barra-container">
+                <span>Matemática</span>
+                <div class="barra" id="barraM"></div>
+            </div>
+
+            <div class="barra-container">
+                <span>Redação</span>
+                <div class="barra" id="barraR"></div>
+            </div>
+
+        </section>
+
+        <section class="card sobre" id="sobre">
+
+                <h2>Sobre o Projeto</h2>
+
+    <p>
+        O ENEMCalc é um simulador desenvolvido para
+        calcular médias ponderadas do ENEM de forma
+        simples e rápida.
+    </p>
+
+    <p>
+        O usuário pode informar suas notas,
+        definir pesos personalizados e comparar
+        sua média com a nota de corte desejada.
+    </p>
+
+        <h3>Desenvolvedores</h3>
+
+    <div class="desenvolvedores">
+
+        <div class="dev">
+
+            <img src="img\dev1.jpeg" alt="Foto do desenvolvedor 1">
+
+            <h4>Maria Victória</h4>
+
+            <p>
+                Estudante do IFRN Campus Pau dos Ferros
+                e desenvolvedor do projeto ENEMCalc.
+            </p>
+
+        </div>
+
+        <div class="dev">
+
+            <img src="img\dev2.jpeg" alt="Foto do desenvolvedor 2">
+
+            <h4>Ytalo Gabriel</h4>
+
+            <p>
+                Estudante do IFRN Campus Pau dos Ferros
+                e desenvolvedor do projeto ENEMCalc.
+            </p>
+
+        </div>
+
+    </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+           Trabalho de Programção para Internet. 
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
